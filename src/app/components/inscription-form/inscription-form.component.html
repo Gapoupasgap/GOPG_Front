@@ -1,0 +1,47 @@
+  <!-- Contact -->
+  <section class="page-section" id="inscription">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Inscris-toi!</h2>
+          <h3 class="section-subheading text-muted">Nous te tiendrons au courant.</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <form  [formGroup]="inscriptionForm" (ngSubmit)="onSubmit()"> 
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input type="text" class="form-control" formControlName="nom" autocomplete="off" tabindex="0" aria-label="Nom" aria-describedby="i.desc.226775142 i.err.226775142" 
+                  value="" dir="auto" data-initial-dir="auto" data-initial-value="" aria-invalid="false" placeholder="Ton nom *" required="required" data-validation-required-message="Saisis ton nom.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" formControlName="email" autocomplete="off" tabindex="0" aria-label="Adresse Mail" aria-describedby="i.desc.1073487165 i.err.1073487165"
+                   value="" dir="auto" data-initial-dir="auto" data-initial-value="" placeholder="Ton adresse mail *" required="required" data-validation-required-message="Saisis ton adresse mail">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" formControlName="etudes" autocomplete="off" tabindex="0" aria-label="Etudes" aria-describedby="i.desc.947544191 i.err.947544191"
+                   name="entry.49139105" value="" dir="auto" data-initial-dir="auto" data-initial-value="" placeholder="Tes études"  data-validation-required-message="Indique tes études">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" formControlName="ecole" autocomplete="off" tabindex="0" aria-label="Université / Ecole" aria-describedby="i.desc.1408956960 i.err.1408956960"
+                     alue="" dir="auto" data-initial-dir="auto" data-initial-value="" placeholder="Ton université / école" data-validation-required-message="Indique ton université ou ton école">
+                    <p class="help-block text-danger"></p>
+                  </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-lg-12 text-center">
+                <div id="success"></div>
+                <button id="ss-submit" class="btn btn-primary btn-xl text-uppercase" type="submit" >S'inscrire!</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <iframe name="secret-frame" width="0" height="0" border="0" style="display: none;"></iframe>
